@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="loginPage" class="login-wrapper">
+        <h2 class="logo">🏋 GYM <span>SYSTEM</span></h2>
+        <div class="input-group">
+            <input type="text" placeholder="Username" id="username">
+        </div>
+        <div class="input-group">
+            <input type="password" placeholder="Password" id="password">
+        </div>
+
+        <!-- Role Login Buttons -->
+        <div class="bottom-links">
+            <button onclick="login('admin')"> Admin Login </button>
+            <button onclick="login('customer')"> Customer Login </button>
+            <button onclick="login('staff')"> Staff Login </button>
+        </div>
+    </div>
+    <script type="module" src="login.js"></script>
+</body>
+</html>

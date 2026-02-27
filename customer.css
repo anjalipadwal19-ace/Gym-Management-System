@@ -1,0 +1,170 @@
+/* ================== Body ================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f2a38, #3a5068);
+    color: #fff;
+}
+
+/* ================== Login Page ================== */
+.center-box {
+    width: 350px;
+    margin: 80px auto;
+    padding: 25px 20px;
+    background: rgba(255,255,255,0.05); 
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #2ecc71;
+    background: rgba(255,255,255,0.1);
+}
+
+button {
+    padding: 12px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* ================== Sidebar ================== */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    position: fixed;
+    padding: 20px 10px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateX(5px);
+}
+
+/* ================== Main Content ================== */
+.content {
+    margin-left: 230px;
+    padding: 20px;
+}
+
+/* ================== Navbar ================== */
+.navbar {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    border-radius: 12px;
+}
+
+/* ================== Cards ================== */
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ================== Tables ================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td, th {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+}
+
+th {
+    background: rgba(255,255,255,0.1);
+    font-weight: 600;
+}
+
+/* ================== Alert & Report Box ================== */
+.alert {
+    background: rgba(255,255,0,0.2);
+    padding: 15px;
+    border-radius: 12px;
+    color: #000;
+}
+
+.report-box {
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .content {
+        margin-left: 0;
+        padding: 15px;
+    }
+}

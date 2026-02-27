@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Admin Panel</title>
+    <link rel="stylesheet" href="admin.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <!-- Dashboard -->
+    <div id="dashboard-section" style="display:none;">
+        <div class="navbar">
+            <div>Gym Management System</div>
+            <div>
+                Welcome Admin
+                <button onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sidebar">
+                <ul>
+                    <li onclick="loadSection('dashboard')">Dashboard</li>
+                    <li onclick="loadSection('members')">Member Management</li>
+                    <li onclick="loadSection('attendance')">Attendance</li>
+                    <li onclick="loadSection('payment')">Payment</li>
+                    <li onclick="loadSection('staff')">Staff Management</li>
+                    <li onclick="loadSection('plans')">Diet & Membership</li>
+                    <li onclick="loadSection('announcement')">Announcement</li>
+                    <li onclick="loadSection('report')">Report</li>
+                </ul>
+            </div>
+            <div class="main-content" id="main-content">
+                <div id="dashboard-section"> </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="admin.js" ></script>
+</body>
+</html>

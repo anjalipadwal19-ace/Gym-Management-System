@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Staff Panel</title>
+    <link rel="stylesheet" href="staff.css">
+</head>
+<body>
+    <!-- Main App -->
+    <div id="app">
+        <div class="sidebar">
+            <h2>Staff Panel</h2>
+            <a onclick="loadSection('dashboard')">Dashboard</a>
+            <a onclick="loadSection('member')">Member Management</a>
+            <a onclick="loadSection('attendance')">Attendance</a>
+            <a onclick="loadSection('payment')">Payment</a>
+        </div>
+        <div class="content">
+            <div class="navbar">
+                <h3>Home</h3>
+                <div>
+                    <button>Welcome Staff</button>
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </div>
+            <div id="main-content">
+                <div id="dashboard-section"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="staff.js"></script>
+</body>
+</html>

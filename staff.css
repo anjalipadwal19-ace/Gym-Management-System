@@ -1,0 +1,178 @@
+/* ================== Body ================== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f2a38, #3a5068);
+    color: #fff;
+}
+
+/* ================== Login ================== */
+.login {
+    width: 320px;
+    margin: 100px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* ==================  Inputs & Selects ==================  */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #2ecc71;
+    background: rgba(255,255,255,0.1);
+}
+
+/* ==================  Buttons ==================  */
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 12px;
+    background: #2ecc71;
+    border: none;
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* ================== Sidebar ================== */
+#app {
+    display: none;
+}
+
+.sidebar {
+    width: 230px;
+    height: 100vh;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    position: fixed;
+    padding: 20px 10px;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateX(5px);
+}
+
+/* ================== Content ================== */
+.content {
+    margin-left: 240px;
+    padding: 25px;
+}
+
+/* ================== Navbar ================== */
+.navbar {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* ================== Cards ================== */
+.card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    margin: 10px;
+    display: inline-block;
+    width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* ================== Table ================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+td, th {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 10px;
+    color: #fff;
+}
+
+/* ================== Form Box & Receipt ================== */
+.formBox {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 20px;
+    margin-top: 10px;
+    display: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.receipt {
+    border: 2px solid rgba(255,255,255,0.3);
+    padding: 20px;
+    display: none;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+/* ================== Responsive ================== */
+@media (max-width: 992px) {
+    .content {
+        margin-left: 0;
+    }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
+}

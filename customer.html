@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gym Customer Panel</title>
+    <link rel="stylesheet" href="customer.css">
+</head>
+<body>
+    <!-- MAIN APP -->
+    <div id="mainApp" style="display:none;">
+        <div class="sidebar">
+            <h2>Customer</h2>
+            <a onclick="loadSection('dashboard')">Dashboard</a>
+            <a onclick="loadSection('todo')">To Do List</a>
+            <a onclick="loadSection('reminder')">Reminder</a>
+            <a onclick="loadSection('attendance')">Attendance</a>
+            <a onclick="loadSection('announcement')">Announcement</a>
+            <a onclick="loadSection('report')">Report</a>
+        </div>
+        <div class="content">
+    <div class="navbar">
+        <h3>Customer Panel</h3>
+        <div>
+            <button>Welcome Customer</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </div>
+    <div id="main-content"></div>
+    </div>
+    </div>
+    <script type="module" src="customer.js"></script>
+</body>
+</html>
